@@ -1,0 +1,40 @@
+* {
+	font-family: sans-serif;
+}
+
+form {
+	border: 1px solid #000;
+	border-radius: 10px;
+	max-width: 350px;
+}
+
+fieldset {
+	border: none;
+}
+
+.label {
+	margin: 15px;
+	display: block;
+}
+
+.input {
+	padding: 5px 10px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	display: block;
+	min-width: 230px;
+	max-width: 230px;
+}
+
+textarea {
+	min-height: 40px;
+	max-height: 150px;
+}
+
+button {
+	display: block;
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+	padding: 5px 10px;
+}
