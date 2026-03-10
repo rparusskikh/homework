@@ -1,0 +1,38 @@
+html {
+	font-family: sans-serif;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+.cap {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	border-bottom: 2px solid;
+	padding: 20px;
+	width: 80%;
+	gap: 20px;
+	font-size: small;
+	font-weight: 700;
+}
+
+.list {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	gap: 20px;
+}
+
+a {
+	color: black;
+}
