@@ -1,0 +1,84 @@
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.hero__container{
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--hero-bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.hero__info{
+    padding-top: 106px;
+    padding-bottom: 116px;
+    width: 100%;
+}
+
+.hero__button{
+    border-radius: 62px;
+    padding: 16px 54px;
+    width: 210px;
+    height: 52px;
+    background: var(--second-color);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-bottom: 48px;
+}
+
+.hero__title{
+    margin-bottom: 34px;
+}
+
+.hero__text{
+    margin-bottom: 32px;
+}
+
+.statistics__container{
+    display: flex;
+}
+
+.statistics__container--1{
+    display: flex;
+}
+
+.statistics__container--2{
+   display: flex;
+}
+
+
+.statistics__title{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--second-color);
+}
+
+.statistics__article-brands{
+    padding-right: 32px;
+    margin-right: 32px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.statistics__article-goods{
+    padding-right: 32px;
+    margin-right: 32px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hero__img{
+    width: 1440px;
+    height: 663px;
+}
