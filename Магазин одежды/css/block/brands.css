@@ -1,0 +1,17 @@
+.brands{
+    width: 100%;
+    background-color: #000;
+    margin-bottom: 72px;
+}
+
+.brands__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 106px;
+    max-width: 1440px;
+}
+
+.brands__icon{
+    fill: #fff;
+}
