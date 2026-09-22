@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-color: var(--hero-bg-color);
+    background-color: var(--hero-bg-color);  
 }
 
 
@@ -10,13 +10,12 @@
     padding-top: 80px;
     padding-bottom: 40px;
     position: relative;
-    max-width: 1440px;
     margin: 0 auto;
     width: 100%;
-    
     background-image: url("./../../images/hero__img.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;  
+    
 }
 
 @media (width <= 1200px) {
@@ -91,13 +90,6 @@
 
 .hero__title{
     margin-bottom: 34px;
-}
-
-@media (width <= 768px) {
-    .hero__title{
-        font-size: 32px;
-        line-height: 106%;
-    }
 }
 
 .hero__text{
