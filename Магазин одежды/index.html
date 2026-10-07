@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOP.CO</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />  
     <link rel="icon" type="image/svg+xml" href="icons/Vector.svg">
-    <link rel="stylesheet" href="./css/index.css">
-    <script defer src="js/index.js" type="module"></script>
+   <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./js/index.js" type="module"></script>
+    <title>SHOP.CO</title>
 </head>
 <body class="page__body">
     <header class="header">
@@ -343,6 +351,73 @@
                     <button class="appearance__button appearance__button--formal"><h3 class="appearance__button-title">Формальный</h3</button>
                     <button class="appearance__button appearance__button--evening"><h3 class="appearance__button-title">Вечерний</h3</button>
                     <button class="appearance__button appearance__button--sport"><h3 class="appearance__button-title">Спорт</h3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="container">
+            <header class="reviews__header">
+                <h2 class="reviews__title">ЧТО О НАС ГОВОРЯТ</h2>
+                <div class="reviews-arrows">
+                    <button class="reviews__slider-button reviews__slider-button--prev">
+                        <svg class="reviews__button">
+                            <use class="reviews__slider-button-icon"  href="./icons/sprite.svg#arrow__slider"></use>
+                        </svg>
+                    </button>
+                    <button class="reviews__slider-button reviews__slider-button--next">
+                        <svg class="reviews__button">
+                            <use class="reviews__slider-button-icon"  href="./icons/sprite.svg#arrow__slider"></use>
+                        </svg>
+                    </button>
+                </div>
+            </header>
+            <div class="reviews__slider-wrapper">
+                <div class="swiper reviews__slider  ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide reviews__slide">
+                            <div class="reviews__slide-container">
+                                <svg class="reviews__raiting">
+                                    <use href="./icons/reviews-raiting.svg#5"></use>
+                                </svg>
+                                <div class="reviews__slide-title">
+                                    <h4 class="reviews__slide-name">Виталий У.</h4>
+                                    <svg class="reviews__raiting">
+                                        <use href="./icons/reviews-raiting.svg#reviews__mark"></use>
+                                    </svg>
+                                </div>
+                                <p class="text reviews__text">«Я в восторге от качества и стиля <br> одежды, которую получил от Shop.co. От повседневных вещей до элегантных платьев — каждая покупка превзошла <br> мои ожидания.»</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews__slide">
+                            <div class="reviews__slide-container">
+                                <svg class="reviews__raiting">
+                                    <use href="./icons/reviews-raiting.svg#5"></use>
+                                </svg>
+                                <div class="reviews__slide-title">
+                                    <h4 class="reviews__slide-name">Даниил В.</h4>
+                                    <svg class="reviews__raiting">
+                                        <use href="./icons/reviews-raiting.svg#reviews__mark"></use>
+                                    </svg>
+                                </div>
+                                <p class="text reviews__text">«Раньше было трудно найти одежду под мой стиль, пока я не открыл Shop.co. Их ассортимент впечатляет и подходит для разных вкусов и случаев.»</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews__slide">
+                            <div class="reviews__slide-container">
+                                <svg class="reviews__raiting">
+                                    <use href="./icons/reviews-raiting.svg#5"></use>
+                                </svg>
+                                <div class="reviews__slide-title">
+                                    <h4 class="reviews__slide-name">Альберт Б.</h4>
+                                    <svg class="reviews__raiting">
+                                        <use href="./icons/reviews-raiting.svg#reviews__mark"></use>
+                                    </svg>
+                                </div>
+                                <p class="text reviews__text">«Я всегда ищу уникальные модные вещи и был рад открыть для себя Shop.co. Их выбор одежды очень разнообразен и полностью соответствует последним модным трендам.»</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
