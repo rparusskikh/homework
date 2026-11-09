@@ -1,0 +1,173 @@
+.hit__container{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-bottom: 78px;
+}
+
+.hit__title{
+    margin-bottom: 55px;
+}
+
+.hit__cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+@media (width <= 1330px){
+    .hit__cards{
+        gap: 10px;
+    }
+}
+
+@media (width <= 768px){
+    .hit__cards{
+        gap: 60px;
+    }
+}
+
+@media (width <= 600px){
+    .hit__cards{
+        gap: 10px;
+    }
+}
+
+
+.hit__article{
+    max-width: 295px;
+}
+
+@media (width <= 1240px){
+
+    .hit__article{
+        max-width: 235px;
+    }
+}
+
+@media (width <= 1100px){
+
+    .hit__article{
+        max-width: 173px;
+    }
+}
+
+@media (width <= 768px) {
+    .hit__article--3{
+        display: none;
+    }
+    .hit__article--4{
+        display: none;
+    }
+}
+
+.hit__article-img{
+    border-radius: 20px;
+    max-width: 295px;
+    height: 298px;
+    margin-bottom: 16px;
+}
+
+@media (width <= 1240px){
+    .hit__article-img{
+        max-width: 235px;
+        height: 250px;
+    }
+}
+
+@media (width <= 1100px){
+    .hit__article-img{
+        max-width: 173px;
+        height: 200px;
+        margin-bottom: 0px;
+    }
+}
+
+.hit__text{
+    display: inline-block;
+    display: flex;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--second-color);
+}
+
+
+@media (width <= 1100px){
+    .hit__text{
+        font-size: 18px;
+    }
+}
+
+
+.hit__text--crossed{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+@media (width <= 1100px){
+    .hit__text--crossed{
+        font-size: 18px;
+    }
+}
+
+
+.hit__price{
+    display: flex;
+    gap: 8px;
+}
+
+@media (width <= 1100px){
+    .hit__price{
+        gap: 5px;
+    }
+}
+
+.hit__price-text{
+    display: flex;
+    gap: 8px;
+}
+
+@media (width <= 1100px){
+    .hit__price-text{
+        gap: 5px;
+    }
+}
+
+.hit__button{
+    display: flex;
+    justify-content: center;
+    max-width: 1240px;
+    width: 100%;
+}
+
+.hit__button--1{
+    display: flex;
+    align-items: center;     
+    justify-content: center;  
+    text-align: center; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 62px;
+    padding: 16px 54px;
+    width: 218px;
+    height: 52px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--second-color);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+@media (width <= 768px) {
+    .hit__button--1{
+        width: 358px;
+        height: 46px;
+    }
+}
