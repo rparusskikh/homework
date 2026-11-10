@@ -38,21 +38,21 @@
             <a class="button header__logo" href="index.html">SHOP.CO</a>
             <nav id="header__menu" class="menu header__menu">
                 <ul class="menu__list">
-                    <li class="button menu__item">
-                        <details class="menu__link shop">
-                            <summary class="shop__title">
-                                Магазин
-                                <svg class="shop-arrow-icon">
-                                    <use class="shop-arrow" href="./icons/sprite.svg#shop-arrow"></use>
-                                    <use class="shop-arrow--adapted" href="./icons/sprite.svg#shop-arrow--adapted"></use>
-                                </svg>
-                            </summary>
-                            <ul class="shop__list">
-                                <li class="shop__item"><a href="" class="shop__link"></a></li>
-                                <li class="shop__item"><a href="" class="shop__link"></a></li>
-                                <li class="shop__item"><a href="" class="shop__link"></a></li>
-                            </ul>
-                        </details></li>
+                    <li class=" menu__item shops"><button class="button menu__link shops__btn">
+                        Магазины
+                        <svg class="shop-arrow-icon">
+                            <use class="shop-arrow" href="./icons/sprite.svg#shop-arrow"></use>
+                            <use class="shop-arrow--adapted" href="./icons/sprite.svg#shop-arrow--adapted"></use>
+                        </svg>
+                    </button>
+                    <div class="shops__container">
+                        <ul class="shops__list">
+                            <li class="shops__item"><a class="button shops__item-link" href="#">SHOP.CO</a></li>
+                            <li class="shops__item"><a class="button shops__item-link" href="#">SHOP.CO-kids</a></li>
+                            <li class="shops__item"><a class="button shops__item-link" href="#">SHOP.CO-outlet</a></li>
+                        </ul>
+                    </div>
+                    </li>
                     <li class="button menu__item"><a href="#" class="menu__link">Скидки</a></li>
                     <li class="button menu__item"><a href="#" class="menu__link">Новые поступления</a></li>
                     <li class="button menu__item"><a href="#" class="menu__link">Бренды</a></li>
@@ -467,15 +467,20 @@
                 <div class="feedback__container-main">
                     <p class="feedback__text">БУДЬТЕ В КУРСЕ ВСЕХ ПОСЛЕДНИХ НОВОСТЕЙ</p>
                     <div class="feedback__sms">
-                        <svg class="mail" width="349px" height="48px">
-                            <use href="./icons/mail.svg#mail"></use>
-                        </svg>
-                        <svg class="mail__adapted" width="311" height="42">
-                            <use href="./icons/mail.svg#mail__adapted"></use>
-                        </svg>
-                        <button class="button feedback__button">
+                        <form class="mail feedback__mail" action="/mail" method="get">
+                            <div class="mail">
+                            <button type="submit" width="24px" height="24px" class="button mail__btn" aria-label="Обратная связь">
+                                <svg width="24px" height="24px">
+                                    <use class="mail__icon" href="./icons/sprite.svg#mail"></use>
+                                </svg>
+                            </button>
+                            <input type="email" id="user-email" name="email" placeholder="Ваша почта" required>
+                            </div>
+                            <button class="button feedback__button">
                             Подписаться на рассылку
-                        </button>
+                            </button>
+                        </form>
+                        
                     </div>
                 </div>
             </div>
@@ -490,24 +495,44 @@
                     <p class="text footer__text">У нас есть одежда, что подходит вашему стилю и которой можно гордиться. Для женщин и мужчин.</p>
                     <div class="messengers">
                         <button class="button footer__btn">
-                            <svg width="28px" height="28px">
-                                <use href="./icons/messengers.svg#twitter"></use>
+                            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                                <svg class="footer__btn--black" width="28px" height="28px">
+                                <use  href="./icons/messengers.svg#twitter-black"></use>
                             </svg>
+                            <svg class="footer__btn--white" width="28px" height="28px">
+                                <use  href="./icons/messengers.svg#twitter-white"></use>
+                            </svg>
+                            </a>
                         </button>
                         <button class="button footer__btn">
-                            <svg width="28px" height="28px">
-                                <use href="./icons/messengers.svg#facebook"></use>
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                <svg class="footer__btn--black" width="28px" height="28px">
+                                <use  href="./icons/messengers.svg#facebook-black"></use>
                             </svg>
+                            <svg class="footer__btn--white" width="28px" height="28px">
+                                <use  href="./icons/messengers.svg#facebook-white"></use>
+                            </svg>
+                            </a>
                         </button>
                         <button class="button footer__btn">
-                            <svg width="28px" height="28px">
-                                <use href="./icons/messengers.svg#instagram"></use>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                <svg class="footer__btn--black" width="28px" height="28px">
+                                <use  href="./icons/messengers.svg#instagram-black"></use>
                             </svg>
+                            <svg class="footer__btn--white" width="28px" height="28px">
+                                <use  href="./icons/messengers.svg#instagram-white"></use>
+                            </svg>
+                            </a>
                         </button>
                         <button class="button footer__btn">
-                            <svg width="28px" height="28px">
-                                <use href="./icons/messengers.svg#git"></use>
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                <svg class="footer__btn--black" width="28px" height="28px">
+                                <use  href="./icons/messengers.svg#git-black"></use>
                             </svg>
+                            <svg class="footer__btn--white" width="28px" height="28px">
+                                <use  href="./icons/messengers.svg#git-white"></use>
+                            </svg>
+                            </a>
                         </button>
                     </div>
                 </div>

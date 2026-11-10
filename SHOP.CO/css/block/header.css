@@ -103,13 +103,11 @@ body.page__body--no-scroll .header {
     }
 }
 
-.shop{
-    cursor: pointer;
-}
-
-.shop__title{
+.shops__btn{
     display: flex;
+    gap: 6px;
     align-items: center;
+    justify-content: center;
 }
 
 .shop-arrow-icon {
@@ -122,29 +120,94 @@ body.page__body--no-scroll .header {
     display: none;
 }
 
-@media (width <= 768) {
-    .shop-arrow{
-        display: none;
-    }
+@media (width <= 768px) {
+    
     .shop-arrow--adapted{
         display: block;
     }   
 }
 
-
-
-summary {
-    list-style: none
+.shop-arrow-icon {
+    transition: transform 0.3s ease;
 }
 
-summary::-webkit-details-marker {
-  display: none;
+.arrow-rotated {
+    transform: rotate(180deg);
 }
 
-details[open] .shop-arrow-icon{
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+.shops{
+    flex-direction: column;
+}
+
+.shops__item-link{
+    font-family: var(--font-family);
+    font-weight: 400px;
+    font-size: 16px;
+    color: var(--second-color);
+}
+
+@media (width <= 768px) {
+    
+    .shops__item-link {
+        color: #fff;
+    }
+}
+
+
+.shops__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shops__container{
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+     transition: all 0.3s ease;
+}
+
+
+.shops__container-active{
+    opacity: 1;
+    visibility: visible;
+    padding: 30px 10px 15px;
+    transform: translateX(-10%);
+    background-color: #fff;
+}
+
+
+.shops__btn:focus-visible{
+    outline: 2px solid var(--second-color);       
+    outline-offset: 1px;
+}
+
+.shops__btn:active .shop-arrow{
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+@media (width <= 768px) {
+    .shops__container {
+        position: relative; 
+        transform: none; 
+        background-color: transparent;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    .shops__container-active {
+        opacity: 1;
+        visibility: visible;
+        padding-top: 10px;
+        padding-left: 15px;
+        max-height: 200px;
+    }
+    
 }
 
 
@@ -183,7 +246,6 @@ details[open] .shop-arrow-icon{
 }
 
 .search__wrapper input[type="search"]::placeholder {
-  
   color: rgba(0, 0, 0, 0.4);
   font-family: var(--font-family);
   font-weight: 400;

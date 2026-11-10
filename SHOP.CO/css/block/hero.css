@@ -70,8 +70,6 @@
 .hero__button{
     border-radius: 62px;
     padding: 16px 54px;
-    width: 210px;
-    height: 52px;
     background: var(--second-color);
     font-family: var(--font-family);
     font-weight: 500;
@@ -84,7 +82,8 @@
 
 @media (width <= 768px) {
     .hero__button{
-        width: 358px;
+        max-width: 358px;
+        width: 100%;
     }
 }
 

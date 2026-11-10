@@ -14,7 +14,6 @@
 .footer__info{
     display: flex;
     gap: 118px;
-    padding-bottom: 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -90,10 +89,26 @@
     fill: #fff;
 }
 
+.footer__btn--black{
+    display: block;
+}
+
+.footer__btn--white{
+    display: none;
+}
+
+.footer__btn:hover .footer__btn--black {
+  display: none;
+}
+.footer__btn:hover .footer__btn--white {
+  display: inline-block;
+}
+
 .footer__navigation{
     display: flex;
     justify-content: center;
     gap: 118px;
+    padding-bottom: 50px;
 }
 
 @media(width <= 1265px){

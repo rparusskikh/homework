@@ -1,6 +1,7 @@
 import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
 import { reviewsSlider } from "./reviews__slider.js";
+import initDropdown from "./dropdown.js";
 
 try {
   const headerFixed = new HeaderFixed({
@@ -28,6 +29,7 @@ try {
   );
 
   reviewsSlider();
+  initDropdown();
 } catch (error) {
   console.error(error);
 }

@@ -26,3 +26,5 @@ export default class HeaderFixed {
     this.header.classList.remove(this.headerTypes.HEADER_FIXED);
   }
 }
+
+
