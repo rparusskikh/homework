@@ -19,7 +19,6 @@ body.page__body--no-scroll .header {
 .header--fixed {
     position: sticky;
     z-index: 100;
-    padding: 15px 0;
 	-webkit-box-shadow: 0 0 20px var(--shadow-color);
 	box-shadow: 0 0 20px var(--shadow-color);
 	
