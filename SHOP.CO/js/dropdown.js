@@ -3,7 +3,6 @@ export default function() {
     const container = document.querySelector('.shops__container');
     const arrow = document.querySelector('.shop-arrow-icon');
 
-    // Клик по кнопке "Магазины"
     button.addEventListener('click', (event) => {
         event.stopPropagation();
         container.classList.toggle('shops__container-active');
