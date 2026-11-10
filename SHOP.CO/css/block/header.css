@@ -12,12 +12,12 @@
 }
 
 body.page__body--no-scroll .header {
-    position: fixed !important;
+    position: sticky !important;
     z-index:  var(--layer-3) !important;
 }
 
 .header--fixed {
-    position: fixed;
+    position: sticky;
     z-index: 100;
     padding: 15px 0;
 	-webkit-box-shadow: 0 0 20px var(--shadow-color);
